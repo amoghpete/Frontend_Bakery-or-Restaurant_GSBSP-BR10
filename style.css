@@ -1,0 +1,10 @@
+.brand {
+    max-width: 10px;
+}
+
+header {
+    color: #FFD700;
+    background-image: url("/assets/ayesha-firdaus-dcTFLHSDw7c-unsplash.jpg");
+    height: 500px;
+    text-align: center;
+}
