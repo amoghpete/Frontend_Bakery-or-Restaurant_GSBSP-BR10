@@ -17,7 +17,7 @@ header h1 {
     padding-top: 4rem;
     padding-right: 4rem;
     background-color: rgba(0, 0, 0, 0.3);
-    
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .jumbo {
@@ -29,6 +29,7 @@ header h1 {
 .jumbotron {
     background-color: #815531;
     color: #fff2ac;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .btn {
@@ -41,4 +42,16 @@ footer {
     background-color: #000;
     text-align: center;
 }
+h3 {
+    font-family: 'Berkshire Swash', cursive;
+    color: #FFD700;
+    padding: 1.5rem;
+}
 
+hr{
+    background-color: #FFD700;
+}
+
+.row img{
+    width: 50px;
+}
