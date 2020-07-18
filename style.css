@@ -1,5 +1,5 @@
-.brand {
-    max-width: 10px;
+body{
+    background-color: #fff2ac;
 }
 
 header {
@@ -18,5 +18,27 @@ header h1 {
     padding-right: 4rem;
     background-color: rgba(0, 0, 0, 0.3);
     
+}
+
+.jumbo {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: #815531;
+    color: #fff2ac;
+}
+
+.btn {
+    background-color: #FFD700;
+    color: #000;
+}
+
+footer {
+    color: #fff2ac;
+    background-color: #000;
+    text-align: center;
 }
 
