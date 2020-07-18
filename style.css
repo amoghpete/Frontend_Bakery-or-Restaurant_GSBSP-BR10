@@ -55,3 +55,11 @@ hr{
 .row img{
     width: 50px;
 }
+#logo{
+    width: 20rem;
+}
+
+.credit {
+    text-align: center;
+    background-color: #fff;
+}
