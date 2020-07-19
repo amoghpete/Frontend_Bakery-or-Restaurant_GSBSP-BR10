@@ -19,7 +19,7 @@ header{
     }
 
     .card-columns{
-        width: 20rem;
+        margin: auto;
     }
     
 }
