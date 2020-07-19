@@ -1,0 +1,21 @@
+header{
+    background-image: url("assets/cater-yang-4SAzs4iYn8I-unsplash.jpg");
+}
+
+.card-columns{
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.featured {
+    margin: 2rem;
+}
+#check{
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+    header h5{
+        color: rgb(216, 216, 216);
+    }
+}
