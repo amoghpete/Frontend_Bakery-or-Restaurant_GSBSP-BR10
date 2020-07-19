@@ -59,13 +59,26 @@
         display: table;
         clear: both;
         }
-
+        p{
+          color: gray;
+        }
+        header {
+              background-image: url("assets/helena-lopes-yIcm3DWRz-c-unsplash.jpg");
+          }
         /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other  */
         @media screen and (max-width: 600px) {
             #contactform .column, input[type=submit] {
             width: 100%;
             margin-top: 0;
-        }
+            }
+            header {
+              background-image: url("assets/mobile\ primary.jpg");
+              height: 400px;
+              color: rgb(0, 0, 0);
+          }
+          header h5{
+            background-color: rgba(228, 186, 1, 0.527);
+          }
         }
     </style>
   </head>
@@ -88,11 +101,15 @@
         </div>
         </div>
       </nav>
-      
+      <header>
+        <!-- <span>Photo by <a href="https://unsplash.com/@wildlittlethingsphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Helena Lopes</a> on <a href="https://unsplash.com/s/photos/reception?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+        <h1>Contact Us</h1>
+        <h5>For all your queries and suggetion we are here</h5>
+        </header>
       <div class="container" id="contactform">
         <div style="text-align:center">
-          <h2>Contact Us</h2>
-          <p>Share your experience with us all your suggestions and complaints are welcomed</p>
+          <h2>You can fill the following form</h2>
+          <p>(The submit button will take you to your mail, from where you can send us the mail)</p>
         </div>
         <div class="row">
           <div class="column">
@@ -140,9 +157,7 @@
            <!-- credit: Icons made by <a href="https://www.flaticon.com/authors/freepik" 
             title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 
             title="Flaticon"> www.flaticon.com</a>-->
-          <br>
-          <br>
-          <br>
+          <br><br><br>
         </div>
            
               </div>
