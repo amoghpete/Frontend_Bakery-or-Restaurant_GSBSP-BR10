@@ -10,75 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Contact Us</title>
+    <title>Menu</title>
     <style>
-        #contactform {
-        box-sizing: border-box;
-        margin: 5rem auto;
+        header{
+            background-image: url("assets/cater-yang-4SAzs4iYn8I-unsplash.jpg");
         }
-
-        /* Style inputs */
-        #contactform input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-        }
-
-        #contactform input[type=submit] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        cursor: pointer;
-        }
-
-        #contactform input[type=submit]:hover {
-        background-color: #45a049;
-        }
-
-        #contactform  {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 10px;
-        }
-
-        /* Create two columns that float next to eachother */
-        #contactform .column {
-        float: left;
-        width: 50%;
-        margin-top: 6px;
-        padding: 20px;
-        }
-
-        /* Clear floats after the columns */
-        #contactform .row:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-        p{
-          color: gray;
-        }
-        header {
-              background-image: url("assets/helena-lopes-yIcm3DWRz-c-unsplash.jpg");
-          }
-        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other  */
         @media screen and (max-width: 600px) {
-            #contactform .column, input[type=submit] {
-            width: 100%;
-            margin-top: 0;
+            header h5{
+                color: rgb(216, 216, 216);
             }
-            header {
-              background-image: url("assets/mobile\ primary.jpg");
-              height: 400px;
-              color: rgb(0, 0, 0);
-          }
-          header h5{
-            background-color: rgba(228, 186, 1, 0.527);
-          }
         }
     </style>
   </head>
@@ -93,44 +33,94 @@
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="index.html">Home</a>
             <a class="nav-item nav-link" href="index.html#home">Restaurant</a>
-            <a class="nav-item nav-link" href="menu_.html">Menu</a>
+            <a class="nav-item nav-link" href="menu_.html">Menu<span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="aboutus_.html">About Us</a>
             <a class="nav-item nav-link" href="#">Photo Gallery</a>
-            <a class="nav-item nav-link" href="contact_.html">Contact<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="contact_.html">Contact</a>
         </div>
         </div>
       </nav>
       <header>
-        <!-- <span>Photo by <a href="https://unsplash.com/@wildlittlethingsphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Helena Lopes</a> on <a href="https://unsplash.com/s/photos/reception?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
-        <h1>Contact Us</h1>
-        <h5>For all your queries and suggetion we are here</h5>
+          <!-- <span>Photo by <a href="https://unsplash.com/@rugeli?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cater Yang</a> on <a href="https://unsplash.com/s/photos/restaurant-kitchen?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+        <h1>Menu</h1>
+        <h5>A variety of dishes handpicked for you</h5>
         </header>
-      <div class="container" id="contactform">
-        <div style="text-align:center">
-          <h2>You can fill the following form</h2>
-          <p>(The submit button will take you to your mail, from where you can send us the mail)</p>
-        </div>
-        <div class="row">
-          <div class="column">
-            <img src="assets/mike-meyers--haAxbjiHds-unsplash.jpg" style="width:100%">
-            <!-- credit: <span>Photo by <a href="https://unsplash.com/@mike_meyers?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mike Meyers</a> on <a href="https://unsplash.com/s/photos/telephone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+      
+
+
+
+
+
+        <div class="card-columns">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="card p-3">
+              <blockquote class="blockquote mb-0 card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                <footer class="blockquote-footer text-white">
+                  <small>
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+            </div>
+            <div class="card p-3 text-right">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
           </div>
-          <div class="column">
-              <!-- after mailto add your mail to get messages -->
-            <form action="mailto:someone@example.com" method="post" enctype="text/plain" >
-              <label for="fname">Full Name</label>
-              <input type="text" id="fname" name="fullname" placeholder="Our dearest customer" required>
-              <label for="lname">Contact Number</label>
-              <input type="text" id="Contact" name="Contact" placeholder="We need to get to you!">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="What is it about?" required>
-              <label for="Request">Your Request</label>
-              <textarea id="Request" name="Request" placeholder="Write something..." style="height:170px" required></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
-        </div>
-      </div>
+
+
+
+
+
+
 
       <footer>
         <div class="container">
@@ -194,3 +184,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!-- credit: http://www.shudhrestaurant.com/ -->
