@@ -10,7 +10,64 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>The Resto Page</title>
+    <title>Contact Us</title>
+    <style>
+        #contactform {
+        box-sizing: border-box;
+        margin: 5rem auto;
+        }
+
+        /* Style inputs */
+        #contactform input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+
+        #contactform input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        }
+
+        #contactform input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        #contactform  {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+        }
+
+        /* Create two columns that float next to eachother */
+        #contactform .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        #contactform .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other  */
+        @media screen and (max-width: 600px) {
+            #contactform .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+        }
+    </style>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -21,46 +78,43 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="container justify-content-end">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="index.html">Home</a>
             <a class="nav-item nav-link" href="#home">Restaurant</a>
             <a class="nav-item nav-link" href="#">Menu</a>
             <a class="nav-item nav-link" href="#">Sevices</a>
             <a class="nav-item nav-link" href="#">Story</a>
             <a class="nav-item nav-link" href="#">Photo Gallery</a>
-            <a class="nav-item nav-link" href="contact_.html">Contact</a>
+            <a class="nav-item nav-link" href="contact_.html">Contact<span class="sr-only">(current)</span></a>
         </div>
         </div>
       </nav>
-      <header>
-      <h1>The Shaahi Resto</h1>
-      <h5>A Venture Under Kushal Incorporation</h5>
-      </header>
-
-      <div id="home" class="jumbo ">
-      <div class="jumbotron">
-        <h1 class="display-4">A Classic Indian Restaurant!</h1>
-        <p class="lead">Awesome Food with Amazing Service at Astonishing Price</p>
-        <hr class="my-4">
-        <p>NEW OUTDOOR PLACE AVAILABLE!</p>
-        <a class="btn btn-dark btn-lg" href="#" role="button">Reserve Your Table</a>
+      
+      <div class="container" id="contactform">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>Share your experience with us all your suggestions and complaints are welcomed</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="assets/mike-meyers--haAxbjiHds-unsplash.jpg" style="width:100%">
+          </div>
+          <div class="column">
+              <!-- after mailto add your mail to get messages -->
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain" >
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="fullname" placeholder="Our dearest customer" required>
+              <label for="lname">Contact Number</label>
+              <input type="text" id="Contact" name="Contact" placeholder="We need to get to you!">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is it about?" required>
+              <label for="Request">Your Request</label>
+              <textarea id="Request" name="Request" placeholder="Write something..." style="height:170px" required></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
       </div>
 
-      <div class="jumbotron">
-        <h1 class="display-4">To satiate your hunger</h1>
-        <p class="lead">you can consider following ways</p>
-        <hr class="my-4x">
-        <p>Book Reservation, Call Us or Order a Delivery online</p>
-        <a class="btn btn-dark btn-lg" href="#" role="button">Create Your Order</a>
-      </div>
-
-      <div class="jumbotron">
-        <h1 class="display-4">Our other branches</h1>
-        <p class="lead">We always focus on quality than quantity and most important consumer satisfaction</p>
-        <hr class="my-4">
-        <p>Do visit other branches too as we have specialites of each branch which you should considr to explore</p>
-        <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
-      </div>
-    </div>
       <footer>
         <div class="container">
           <div class="row">
